@@ -40,6 +40,8 @@ Test your memory skills by repeating the sequence shown by the game.
 2. Watch the color sequence shown by the game.  
 3. Repeat the sequence by clicking the colored buttons.  
 4. Each correct sequence takes you to the next level.  
-5. Game ends when you press the wrong button.  
+5. Game ends when you press the wrong button.
+
+👉 [Play the game here](https://supriyokoner.github.io/Simon-Says-Game/)
 
 ---
