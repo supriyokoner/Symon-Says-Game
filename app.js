@@ -3,7 +3,7 @@ let gameSeq = [];
 // Store the sequence entered by the user
 let userSeq = [];
 // Available colors (corresponds to button classes in HTML)
-let colors = ["red", "green", "yellow", "blue"];
+let colors = ["red", "green", "orange", "yellow"];
 
 // Game state variables
 let started = false;  // Flag to check if the game has started
