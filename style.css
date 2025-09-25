@@ -1,0 +1,107 @@
+
+
+/* General page styling */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #1a1a1a, #000);
+  font-family: "Poppins", sans-serif;
+  color: #f5f5f5;
+  overflow: hidden;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff;
+}
+
+h2 {
+  margin: 15px 0 25px;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #bbb;
+}
+
+/* Container for the buttons */
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Each row */
+.line1,
+.line2 {
+  display: flex;
+  gap: 20px;
+}
+
+/* Simon buttons */
+.btn {
+  width: 160px;
+  height: 160px;
+  border-radius: 20px;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: transform 0.25s, opacity 0.25s, box-shadow 0.25s;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  position: relative;
+}
+
+/* Glow effect on hover */
+.btn:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Active press */
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* Flash animation when activated by JS */
+.flash {
+  opacity: 1 !important;
+  box-shadow: 0 0 25px white, 0 0 50px white;
+  filter: brightness(3.5);
+}
+
+/* Button Colors with glowing neon effect */
+.red {
+  background: linear-gradient(145deg, #ff4d4d, #cc0000);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+}
+
+.green {
+  background: linear-gradient(145deg, #4dff4d, #009900);
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+}
+
+.orange {
+  background: linear-gradient(145deg, #ffb84d, #cc6600);
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.7);
+}
+
+.yellow {
+  background: linear-gradient(145deg, #ffff66, #cccc00);
+  box-shadow: 0 0 15px rgba(255, 255, 0, 0.7);
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .btn {
+    width: 120px;
+    height: 120px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
